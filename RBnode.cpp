@@ -72,10 +72,6 @@ const RBcolor RBnode<T>::Color() const
         return this->color;
     else
         return RBcolor::BLACK;
-    //TODO: See if RBtree functions can be refactored now that
-    //      a null node (leaf) returns RBcolor::BLACK.
-    //      This was originally added to get RBtree::DeleteCase6
-    //      to work correctly (no other cases affected).
 }
 
 template<typename T>
