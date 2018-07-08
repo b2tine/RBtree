@@ -25,16 +25,9 @@ const std::weak_ptr<const RBnode<T>> RBtree<T>::Root() const
 }
 
 /*
-template<typename T>
-std::shared_ptr<RBnode<T>> RBtree<T>::getRoot()
-{
-    return this->root;
-}
-*/
-
-/*
 //1. RED nodes must have BLACK children.
 //2. BLACK depth equal for every path.
+//3. 
 template<typename T>
 bool RBtree<T>::CheckInvariants() const
 {

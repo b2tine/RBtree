@@ -10,7 +10,6 @@ class RBtree
 
         void makeRoot(const T& key);
         void setRoot(std::shared_ptr<RBnode<T>> node);
-        //std::shared_ptr<RBnode<T>> getRoot();
         
         std::shared_ptr<RBnode<T>> InsertRecursive(
                 const std::shared_ptr<RBnode<T>>& subroot, const T& key);
